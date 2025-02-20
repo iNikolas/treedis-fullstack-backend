@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "sweepId": "bq2d65skky2kt5cwnwgudrrna",
     "label": "Office",
     "description": "Cousy office spot far away from entrance",
     "position": {
@@ -10,7 +11,7 @@
     },
     "stemVector": {
       "x": 0,
-      "y": 2,
+      "y": 0.5,
       "z": 0
     }
   }
