@@ -1,7 +1,13 @@
+interface Position {
+  x: number;
+  y: number;
+  z: number;
+}
+
 export interface Tag {
   id: string;
   label: string;
   description: string;
-  position: string[];
-  stemVector: string[];
+  position: Position;
+  stemVector: Position;
 }
