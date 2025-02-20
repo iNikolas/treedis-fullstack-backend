@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Ethereum",
+    "symbol": "ETH-ERC20",
+    "decimals": 18,
+    "image": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+    "isNative": true,
+    "nativeChain": "ETH",
+    "addresses": {},
+    "coinGeckoId": "ethereum",
+    "isActive": true
+  }
+]
