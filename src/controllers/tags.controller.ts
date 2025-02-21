@@ -4,8 +4,12 @@ import { StatusCodes } from "http-status-codes";
 import tagsService from "../services/tags.service";
 
 class TagsController {
-  async getTags(_: Request, res: Response, __: NextFunction) {
-    return res.status(StatusCodes.OK).json(tagsService.getTags());
+  async getTags(req: Request, res: Response, __: NextFunction) {
+    const search = req.query.search;
+
+    return res
+      .status(StatusCodes.OK)
+      .json(tagsService.getTags(search ? String(search) : ""));
   }
 }
 

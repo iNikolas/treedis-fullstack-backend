@@ -14,8 +14,14 @@ class TagsService {
     );
   }
 
-  getTags() {
-    return this.tags;
+  getTags(search?: string) {
+    if (!search) {
+      return this.tags;
+    }
+
+    return this.tags.filter((tag) =>
+      tag.label.toLowerCase().includes(search.toLowerCase())
+    );
   }
 }
 
